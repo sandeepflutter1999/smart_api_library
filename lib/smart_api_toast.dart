@@ -362,7 +362,7 @@ class _SmartApiToastWidgetState extends State<_SmartApiToastWidget> with TickerP
         if (cfg.emoji != null) ...[
           Container(
             padding: const EdgeInsets.all(8),
-            decoration: BoxDecoration(color: cfg.iconColor.withOpacity(0.08), shape: BoxShape.circle),
+            decoration: BoxDecoration(color: cfg.iconColor.withValues(alpha: 0.08), shape: BoxShape.circle),
             child: Text(cfg.emoji!, style: const TextStyle(fontSize: 20)),
           ),
           const SizedBox(width: 12),
@@ -399,7 +399,7 @@ class _SmartApiToastWidgetState extends State<_SmartApiToastWidget> with TickerP
       constraints: const BoxConstraints(maxWidth: 400, minHeight: 56),
       padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 16),
       decoration: BoxDecoration(
-        color: cfg.gradient == null ? cfg.background.withOpacity(cfg.glass ? 0.55 : 1) : null,
+        color: cfg.gradient == null ? cfg.background.withValues(alpha:cfg.glass ? 0.55 : 1) : null,
         gradient: cfg.gradient,
         borderRadius: BorderRadius.circular(18),
         border: cfg.glass ? Border.all(color: Colors.white.withOpacity(0.4), width: 1.2) : null,

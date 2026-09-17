@@ -122,7 +122,7 @@ class SmartApiClient {
       return _handleDioError<T>(e);
     } catch (e) {
       if (request.showLoader) SmartApiHooks.hideLoader?.call();
-      final msg = "Something went wrong. Try again.";
+      const msg = "Something went wrong. Try again.";
       SmartApiHooks.showMessage?.call(msg, type: SmartApiMsgType.error);
       return SmartApiResponse<T>(success: false, message: msg);
     }
