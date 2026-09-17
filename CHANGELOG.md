@@ -1,6 +1,6 @@
 # Changelog
 
-## 1.0.2
+## 1.0.3
 
 - Added `SmartApiToast`: a built-in, config-driven toast/snackbar widget
   (success, error, warning, info, glass, gradient, timer, map, welcome,
