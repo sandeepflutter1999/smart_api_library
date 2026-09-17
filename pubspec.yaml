@@ -3,7 +3,7 @@ description: >
   Dynamic Dio wrapper for Flutter — auto raw/multipart detection, global
   loader/snackbar/toast hooks, session-expiry handling, and no-internet
   retry, no try/catch boilerplate.
-version: 1.0.3
+version: 1.0.4
 homepage: https://github.com/sandeepflutter1999/smart_api_library
 repository: https://github.com/sandeepflutter1999/smart_api_library
 issue_tracker: https://github.com/sandeepflutter1999/smart_api_library/issues

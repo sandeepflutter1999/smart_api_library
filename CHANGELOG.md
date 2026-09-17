@@ -1,6 +1,6 @@
 # Changelog
 
-## 1.0.3
+## 1.0.4
 
 - Added `SmartApiToast`: a built-in, config-driven toast/snackbar widget
   (success, error, warning, info, glass, gradient, timer, map, welcome,
@@ -19,8 +19,7 @@
 
 ## 1.0.1
 
-- Fixed `pubspec.yaml`: shortened `description` to fit pub.dev's 60–180
-  character limit and added `homepage`/`repository`/`issue_tracker`
+- Fixed `pubspec.yaml`: shortened `description` to fit pub.dev's 60–180character limit and added `homepage`/`repository`/`issue_tracker`
   fields.
 
 ## 1.0.0
