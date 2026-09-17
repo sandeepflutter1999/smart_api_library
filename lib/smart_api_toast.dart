@@ -402,8 +402,8 @@ class _SmartApiToastWidgetState extends State<_SmartApiToastWidget> with TickerP
         color: cfg.gradient == null ? cfg.background.withValues(alpha:cfg.glass ? 0.55 : 1) : null,
         gradient: cfg.gradient,
         borderRadius: BorderRadius.circular(18),
-        border: cfg.glass ? Border.all(color: Colors.white.withOpacity(0.4), width: 1.2) : null,
-        boxShadow: [BoxShadow(color: Colors.black.withOpacity(0.18), blurRadius: 18, offset: const Offset(0, 8))],
+        border: cfg.glass ? Border.all(color: Colors.white.withValues(alpha: 0.4), width: 1.2) : null,
+        boxShadow: [BoxShadow(color: Colors.black.withValues(alpha:0.18), blurRadius: 18, offset: const Offset(0, 8))],
       ),
       child: content,
     );
