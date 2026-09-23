@@ -1,5 +1,16 @@
 # Changelog
 
+## 1.1.0
+
+- Added `SmartApiSocket`: a connectivity-aware Socket.IO wrapper
+  (`socket_io_client` + `connectivity_plus`) with the same hook-driven
+  philosophy as `SmartApiClient` — global `SmartApiSocketHooks` for
+  connect/disconnect/handshake events, auto-reconnect on network
+  changes, and no per-project socket boilerplate.
+- Added `forceRaw` to `SmartApiClient.post`/`put` so a body can be sent
+  exactly as given (string/XML/pre-encoded payload), skipping the
+  JSON-map/multipart handling entirely.
+
 ## 1.0.5
 
 - Added `SmartApiToast`: a built-in, config-driven toast/snackbar widget
