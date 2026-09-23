@@ -66,7 +66,7 @@ class SmartApiSocket {
   ///   straight through to `socket_io_client`'s `OptionBuilder`.
   /// - [extraHeaders]: extra headers/options for the underlying engine.io
   ///   connection (defaults to `{'forceNew': 'true'}`, matching typical
-  ///   Flutter socket setups).
+  ///   Flutter socket setups). Values must be `String`s.
   /// - [listenToConnectivity]: when true (default), the socket
   ///   auto-reconnects as soon as `connectivity_plus` reports the network
   ///   is back, and [isConnected]/[isHandshakeComplete] are reset to false
@@ -78,7 +78,7 @@ class SmartApiSocket {
     List<String> transports = const ['websocket'],
     int reconnectionAttempts = 15,
     int reconnectionDelay = 2000,
-    Map<String, dynamic>? extraHeaders,
+    Map<String, String>? extraHeaders,
     bool listenToConnectivity = true,
   }) {
     _handshakeEvent = handshakeEvent;
