@@ -1,6 +1,6 @@
 # Changelog
 
-## 1.1.0
+## 1.1.1
 
 - Added `SmartApiSocket`: a connectivity-aware Socket.IO wrapper
   (`socket_io_client` + `connectivity_plus`) with the same hook-driven
